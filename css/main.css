@@ -1,0 +1,53 @@
+.header{
+	width: 100%;
+	height: 50px;
+	background-color: cornflowerblue;
+	margin-bottom: 10px;
+}
+#containerForm{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+form > div{
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	margin-bottom: 5px;
+	align-items: center;
+}
+form input{
+	margin: 0 5px;
+}
+form input:focus:invalid{
+	border-color: #900;
+	background-color: #FDD;
+	outline: none;
+}
+form .error{
+	border: 1px solid red;
+}
+form .success{
+	border: 1px solid #3498DB;;
+}
+form .progress{
+	border: 1px solid lightgrey;
+}
+form input[type="submit"]{
+	box-sizing: border-box;
+	padding: 5px 10px;
+	border: 1px solid lightgrey;
+	color: white;
+	background-color: #3498DB;
+	margin: 0 5px;
+}
+form input[type="submit"]:disabled{
+	background-color: lightgrey;
+}
+form #submit:hover{
+	background-color: #2980B9;
+}
+form #resultContainer{
+	padding: 2px;
+}
